@@ -17,8 +17,6 @@ def remove_pairs(path):
     else:
         return path[0] + remove_pairs(path[1:])
 
-import math
-
 def bisection_root(func, x1, x2):
     threshold = 0.0000001
     y1 = func(x1)
@@ -47,5 +45,3 @@ def bisection_root(func, x1, x2):
             y1 = y_mid
         if abs(x_mid - math.pi) < threshold:
             return math.pi
-
-
